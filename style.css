@@ -146,6 +146,78 @@ h1{
     padding: 10px 40px 0px 40px;
 }
 
+.extra-container{
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    background-color: #0b0b0c;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+    justify-content: center;
+}
+
+#trendings{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+#trendings div{
+    background: none;
+    height: 100px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+}
+#trendings h4, #trendings p{
+    grid-column: 2 / 3;
+    font-size: 85%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 160px;
+    margin-right: 10px;
+}
+
+#trendings p:last-of-type{
+    margin-top: -40px;
+}
+
+#trendings img{
+    grid-column: 1 / 2;
+    margin-top: 12.5px;
+}
+
+#trendings img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: block;
+}
+
+.extra-container h1{
+    color: #ffffff;
+    position: static;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.extra-container p{
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: sans-serif;
+    margin-top: -10px;
+}
+
+.extra-container > div{
+    background-color: #242424;
+    border-radius: 0.2rem;
+    height: 450px;
+    width: 280px;
+    padding: 15px;
+}
+
 .searchbar-col-1{
     display: grid;
     grid-template-columns: 0.25fr 5fr;
